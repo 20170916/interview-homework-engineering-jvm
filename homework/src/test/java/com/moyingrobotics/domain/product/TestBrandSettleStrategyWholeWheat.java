@@ -59,13 +59,14 @@ public class TestBrandSettleStrategyWholeWheat {
             int priceRet = brandSettleDto.getPriceSum();
             assertEquals(wholeWheatBrandPrice, priceRet);
 
-            // 验证过期非当天，返回-1
+            // 验证过期非当天，结算价格为0，过期数组有一个元素
             expirationCalenda.setTime(new Date());
             expirationCalenda.set(Calendar.DAY_OF_MONTH,expirationCalenda.get(Calendar.DAY_OF_MONTH)-1);
             brand.setExpiration(expirationCalenda.getTime());
             brandSettleDto = brandService.settleBrand(list);
             priceRet = brandSettleDto.getPriceSum();
-            assertEquals(-1, priceRet);
+            assertEquals(0, priceRet);
+            assertEquals(1, brandSettleDto.getExpireDiscardBrandList().size());
 
 
         } catch (Exception e) {
