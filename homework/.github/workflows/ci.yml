@@ -1,0 +1,114 @@
+name: homework
+on:
+    push:
+        branches:
+            - master
+jobs:
+#    maven-package:
+#        runs-on: centos
+#        steps:
+#            -   uses: actions/checkout@v3
+#            -   uses: actions/setup-java@v3
+#                with:
+#                    distribution: 'temurin'
+#                    java-version: '11'
+#                    cache: 'maven'
+#            -   name: Build with Maven
+#                run: |
+#                    # mvn -B package --file pom.xml
+#                    mvn package
+#                    tar zxf ./target/homework-1.0-SNAPSHOT.tar.gz
+    websocketServer:
+        #needs: maven-package
+        runs-on: centos
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+              with:
+                  persist-credentials: false
+                  cache: maven # 缓存，不然每次下载jar包太慢了(linux宿主机与docker容器都要有maven环境)
+            - name: Install and Build
+              run: |
+                  #npm install
+                  #npm run-script build
+                  #echo 1
+                  #java -version
+                  #mvn package --batch-mode --update-snapshots verify
+                  mvn -B package --file pom.xml
+                  tar zxf ./target/homework-1.0-SNAPSHOT.tar.gz
+                  #cd ./target/homework-1.0-SNAPSHOT
+                  cd /app/homework/target/homework-1.0-SNAPSHOT
+                  sh ./bin/homework-websocketServer.sh
+
+            - name: Deploy
+              uses: JamesIves/github-pages-deploy-action@releases/v3
+              with:
+                  ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+                  BRANCH: gh-pages
+                  FOLDER: build
+    websocketClient1:
+        needs: websocketServer
+        #needs: maven-package
+        runs-on: centos
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+              with:
+                  persist-credentials: false
+                  cache: maven # 缓存，不然每次下载jar包太慢了(linux宿主机与docker容器都要有maven环境)
+            - name: Install and Build
+              run: |
+                  #cd ./target/homework-1.0-SNAPSHOT
+                  cd /app/homework/target/homework-1.0-SNAPSHOT
+                  sh ./bin/homework-websocketClient1.sh
+
+            - name: Deploy
+              uses: JamesIves/github-pages-deploy-action@releases/v3
+              with:
+                  ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+                  BRANCH: gh-pages
+                  FOLDER: build
+    websocketClient2:
+        needs: websocketServer
+        #needs: maven-package
+        runs-on: centos
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+              with:
+                  persist-credentials: false
+                  cache: maven # 缓存，不然每次下载jar包太慢了(linux宿主机与docker容器都要有maven环境)
+            - name: Install and Build
+              run: |
+                  #cd ./target/homework-1.0-SNAPSHOT
+                  cd /app/homework/target/homework-1.0-SNAPSHOT
+                  sh ./bin/homework-websocketClient2.sh
+
+            - name: Deploy
+              uses: JamesIves/github-pages-deploy-action@releases/v3
+              with:
+                  ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+                  BRANCH: gh-pages
+                  FOLDER: build
+    websocketClient3:
+        needs: websocketServer
+        #needs: maven-package
+        runs-on: centos
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+              with:
+                  persist-credentials: false
+                  cache: maven # 缓存，不然每次下载jar包太慢了(linux宿主机与docker容器都要有maven环境)
+            - name: Install and Build
+              run: |
+                  #cd ./target/homework-1.0-SNAPSHOT
+                  cd /app/homework/target/homework-1.0-SNAPSHOT
+                  sh ./bin/homework-websocketClient3.sh
+
+            - name: Deploy
+              uses: JamesIves/github-pages-deploy-action@releases/v3
+              with:
+                  ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+                  BRANCH: gh-pages
+                  FOLDER: build

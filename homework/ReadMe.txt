@@ -17,7 +17,12 @@
   官网地址：https://github.com/powermock/powermock/wiki
 
 
-
+部署：
+1 需要maven环境
+2 需要github act环境
+3 需要docker环境
+  docker依赖镜像需要docker.io/maven: 3.8.5-openjdk-8
+4 本地部署：act -P centos=maven:3.8.5-openjdk-8
 
 
 

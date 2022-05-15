@@ -16,7 +16,6 @@ import java.util.UUID;
 public class WebSocketClient extends AbstractVerticle{
     private static  int shopId ;
     public static void main(String[] args) {
-        log.info("123");
         if(args.length==0){
             System.out.println("please give shopId");
             return;
@@ -60,6 +59,7 @@ public class WebSocketClient extends AbstractVerticle{
             // 过期通知
             final BrandExpiredNotifyDto brandExpiredNotifyDto = message.toJavaObject(BrandExpiredNotifyDto.class);
 
+            log.info("收到服务端websocket通知");
             log.info("brand expired notice:" +
                     "\n shopId : {} " +
                     "\n brandId : {} " +
