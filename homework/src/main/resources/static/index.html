@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <title>homework</title>
+    <link href=./css/common.css rel=stylesheet>
+</head>
+<body>
+<div class="flex flexColumn ">
+    <!--店铺信息-->
+    <div class="b1db7 flex jcsb ">
+        <!--<form onsubmit="return false;" class="width100p flex jcsb">
+            <input type="text" name="message">
+            <input type="button" value="提交" onclick="send(this.form.message.value)">
+            <div id="content"></div>
+        </form>-->
+        <div>
+            <input type="text" name="shopName">
+        </div>
+        <div>
+            <input type="button" value="登录面包店"
+                   onclick="send(this.form.message.value)">
+        </div>
+    </div>
+
+    <!--录入面包-->
+    <div class="b1db7">
+
+    </div>
+
+    <!--已录入面包的信息-->
+    <div class="b1db7">
+
+    </div>
+</div>
+</body>
+
+<script>
+    var socket;
+    if(window.WebSocket){
+        socket = new WebSocket("ws://localhost:8080/");
+        // websocket收到消息
+        socket.onmessage = function(event){
+
+            // 如果服务端是写的二进制数据，则此处的blob也是一个二进制对象，提取数据时需要Blob类和FileReader类配合使用
+            var blob = event.data;
+            var content = $("#content").html();
+            blob += content;
+            $("#content").html(blob);
+        };
+
+        // websocket连接打开
+        socket.onopen = function (event) {
+
+            console.log("websocket 连接打开");
+        };
+
+        // websocket连接关闭
+        socket.onclose = function (event) {
+
+            console.log("websocket 连接关闭");
+        };
+    }else{
+        alert("你的浏览器不支持websocket");
+    }
+
+    function send(message) {
+
+        if(!window.WebSocket){
+            return;
+        }
+        if(socket.readyState == WebSocket.OPEN){
+            socket.send(message);
+        }else{
+            alert("websocket连接未打开，请检查网络设置");
+        }
+    }
+</script>
+</html>

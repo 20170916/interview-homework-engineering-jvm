@@ -1,6 +1,5 @@
-package com.moyingrobotics.domain.product;
+package com.moyingrobotics.application.product.dto;
 
-import com.moyingrobotics.domain.BaseEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,11 +8,17 @@ import lombok.experimental.SuperBuilder;
 import java.util.Date;
 
 /**
- * 面包的对象模型
+ * 面包过期通知dto
  */
 @Data
 @SuperBuilder
-public class Brand extends BaseEntity {
+@NoArgsConstructor
+@AllArgsConstructor
+public class BrandExpiredNotifyDto extends WebSocketDto{
+    /**
+     * 面包id
+     */
+    private Integer id;
     /**
      * 面包名称。
      */
@@ -30,11 +35,6 @@ public class Brand extends BaseEntity {
     private Integer brandCategoryId;
 
     /**
-     * 面包价格，单位精确到分
-     */
-    private Integer price;
-
-    /**
      * 保质期，时间单位为小时
      */
     private Integer shelfLife;
@@ -45,20 +45,8 @@ public class Brand extends BaseEntity {
     private Date expiration;
 
     /**
-     * 面包状态：
-     * 0 未过期
-     * 1 已过期未下架未通知
-     * 2 已过期未下架已通知
-     * 3 已过期已下架
-     */
-    private Byte state =0;
-    public static byte BRAND_STATE_UNEXPIRED = 0;
-    public static byte BRAND_STATE_EXPIRED_SELLING_UNNOTIFY = 1;
-    public static byte BRAND_STATE_EXPIRED_SELLING_NOTIFIED = 2;
-    public static byte BRAND_STATE_EXPIRED_DOWNLINE = 3;
-
-    /**
      * 所属店铺id
      */
     private Integer shopId;
+
 }

@@ -1,0 +1,848 @@
+
+
+
+/*预定义样式*/
+/*清除浮动*/
+.clearFix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/*左右浮动*/
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+/*分层，宽度1190个像素，居中*/
+.layer {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.width100p{
+  width: 100%;
+}
+.width40p{
+  width: 40%;
+}
+.width50p{
+  width: 50%;
+}
+.width60p{
+  width: 60%;
+}
+.width30p{
+  width: 30%;
+}
+.width20px{
+  width: 20px;
+}
+.width30px{
+  width: 30px;
+}
+.width40px{
+  width: 40px;
+}
+.width50px{
+  width: 50px;
+}
+.width60px{
+  width: 60px;
+}
+.width70px{
+  width: 70px;
+}
+.width75px{
+  width: 75px;
+}
+.width80px{
+  width: 80px;
+}
+.width100px{
+  width: 100px;
+}
+.width110px{
+  width: 110px;
+}
+.width120px{
+  width: 120px;
+}
+.width130px{
+  width: 130px;
+}
+.width140px{
+  width: 140px;
+}
+.width150px{
+  width: 150px;
+}
+.width160px{
+  width: 160px;
+}
+.width170px{
+  width: 170px;
+}
+.width180px{
+  width: 180px;
+}
+.width200px{
+  width: 200px;
+}
+.width300px{
+  width: 300px;
+}
+.width350px{
+  width: 350px;
+}
+.width400px{
+  width: 400px;
+}
+.width450px{
+  width: 450px;
+}
+.width500px{
+  width: 500px;
+}
+.width550px{
+  width: 550px;
+}
+.width600px{
+  width: 600px;
+}
+.width650px{
+  width: 650px;
+}
+.width800px{
+  width: 800px;
+}
+.width850px{
+  width: 850px;
+}
+.width900px{
+  width: 900px;
+}
+/*.width1190px{
+  width: 1190px;
+}*/
+.width1000px{
+  width: 1000px;
+}
+.width1190px{
+  width: 1190px;
+}
+.width1200px{
+  width: 1200px;
+}
+.width1015px{
+  width: 1015px;
+}
+.width100{
+  width: 100%;
+}
+
+
+
+
+
+
+
+.height14px{
+  height: 14px;
+}
+.height16px{
+  height: 16px;
+}
+.height20px{
+  height: 20px;
+}
+.height28px{
+  height: 28px;
+}
+.height30px{
+  height: 30px;
+}
+.height40px{
+  height: 40px;
+}
+.height45px{
+  height: 45px;
+}
+.height60px{
+  height: 60px;
+}
+.height70px{
+  height: 70px;
+}
+.height80px{
+  height: 80px;
+}
+.height90px{
+  height: 90px;
+}
+.height300px{
+  height: 300px;
+}
+.height220px{
+  height: 220px;
+}
+.height360px{
+  height: 330px;
+}
+.heightMin700px{
+  min-height: 700px;
+}
+.heightMin600px{
+  min-height: 600px;
+}
+.heightMin650px{
+  min-height:650px;
+}
+
+
+.img200{
+  width: 200px;
+  height: 200px;
+}
+.img300{
+  width: 300px;
+  height: 300px;
+}
+.img500{
+  width: 500px;
+  height: 500px;
+}
+.img600{
+  width: 600px;
+  height: 600px;
+}
+
+
+.b1se0{
+  border: 1px solid #e0e0e0;
+}
+.b1db7{
+  border: 1px dashed #b7b7b7;
+}
+
+
+/*颜色*/
+.c0f0 {
+  color: #00ff00;
+}
+.c0e0 {
+  color: #00ee00;
+}
+.c0a0 {
+  color: #00aa00;
+}
+.c17AB35{
+  color: #17AB35;
+}
+.cF40 {
+    color: #f40;
+}
+.cF60 {
+    color: #f50;
+}
+.cFc0 {
+    color: #ffcc00;
+}
+/*会员卡颜色*/
+.cF7F581{
+  color: #F7F581;
+}
+.cE3A432{
+  color: #E3A432;
+}
+.cF00 {
+    color: #ff0000;
+}
+.cF70 {
+    color: #ff7700;
+}
+.cFff {
+    color: #fff;
+}
+.c000 {
+    color: #000;
+}
+.c666 {
+    color: #666666;
+}
+.c8b8b8b {
+    color: #8b8b8b;
+}
+
+.c969696 {
+    color: #969696;
+}
+.cBa {
+  color: #bababa;
+}
+.cE6 {
+  color: #e6e6e6;
+}
+.cF2 {
+  color: #f2f2f2;
+}
+.c3C82FA {
+  color: #3C82FA;
+}
+.c356BE5 {
+  color: #356BE5;
+}
+
+
+.bcF00 {
+  background-color: #f00;
+}
+.bcDE542D {
+  background-color: #DE542D;
+}
+.bc1890ff {
+  background-color: #1890ff;
+}
+.bc0bbb0ff {
+  background-color: #0bb0ff;
+}
+.bc3C82FA {
+  background-color: #3C82FA;
+}
+.bc356BE5 {
+  background-color: #356BE5;
+}
+.bcF9f9f9 {
+  background-color: #f9f9f9;
+}
+.bcF6f2e8 {
+  background-color: #f6f2e8;
+}
+.bcFe9 {
+  background-color: #ffee99;
+}
+
+.c2a0{
+  color: #22aa00;
+}
+.c1890ff {
+  color:#1890ff;
+}
+.cF7F581 {
+  color:#F7F581;
+}
+.c1890ffHover:hover {
+  color:#1890ff;
+}
+.bc0cf {
+  background-color: #00ccff;
+}
+.bcFff {
+  background-color:#fff;
+}
+
+.bcEAE9E0{
+  background-color: #EAE9E0;
+}
+
+/*margin*/
+.margin5{
+  margin: 5px;
+}
+.margin6{
+  margin: 6px;
+}
+.margin10{
+  margin: 10px;
+}
+.mt3{
+    margin-top: 3px;
+}
+.mt5{
+    margin-top: 5px;
+}
+.mt10{
+    margin-top: 10px;
+}
+.mt15{
+    margin-top: 15px;
+}
+.mt20{
+    margin-top: 20px;
+}
+.mt30{
+    margin-top: 30px;
+}
+.mt50{
+    margin-top: 50px;
+}
+.mr5 {
+    margin-right: 5px;
+}
+.mr6 {
+    margin-right: 6px;
+}
+.mr7 {
+    margin-right: 7px;
+}
+.mr10 {
+    margin-right: 10px;
+}
+.mr20 {
+    margin-right: 20px;
+}
+.mr30 {
+    margin-right: 30px;
+}
+.ml3 {
+    margin-left: 3px;
+}
+.ml5 {
+    margin-left: 5px;
+}
+.ml6 {
+    margin-left: 6px;
+}
+.ml7 {
+    margin-left: 7px;
+}
+.ml10 {
+    margin-left: 10px;
+}
+.ml12 {
+    margin-left: 12px;
+}
+.ml20 {
+    margin-left: 20px;
+}
+.ml30 {
+    margin-left: 30px;
+}
+.ml60 {
+    margin-left: 60px;
+}
+.mb5 {
+    margin-bottom: 5px;
+}
+.mb10 {
+    margin-bottom: 10px;
+}
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+.mb30 {
+    margin-bottom: 30px;
+}
+.mb50 {
+    margin-bottom: 50px;
+}
+
+.padding3{
+  padding: 3px;
+}
+.padding6{
+  padding: 6px;
+}
+.padding3-10{
+  padding: 3px 10px;
+}
+.padding0-10{
+  padding: 0px 10px;
+}
+.padding0-20{
+  padding: 0px 20px;
+}
+.padding10{
+  padding: 10px;
+}
+.pt10{
+  padding-top: 10px;
+}
+.pt20{
+  padding-top: 20px;
+}
+.pt30{
+  padding-top: 30px;
+}
+.padding20{
+  padding: 20px;
+}
+.padding21{
+  padding: 21px;
+}
+.paddingTop10{
+  padding-top: 10px;
+}
+.paddingTop20{
+  padding-top: 20px;
+}
+.pl3 {
+  padding-left: 3px;
+}
+.pl10 {
+  padding-left: 10px;
+}
+.pl20 {
+  padding-left: 20px;
+}
+.pr10 {
+  padding-right: 10px;
+}
+.pr20 {
+  padding-right: 20px;
+}
+.pb5 {
+  padding-bottom: 5px;
+}
+.pb10 {
+  padding-bottom: 10px;
+}
+.pb20 {
+  padding-bottom: 20px;
+}
+.pb21 {
+  padding-bottom: 21px;
+}
+.pb50 {
+  padding-bottom: 50px;
+}
+.paddingBottom20{
+  padding-bottom: 20px;
+}
+
+table {
+    border-collapse: collapse;/*边框模式使用合并模式，两个相邻边框使用一个边框*/
+}
+th, td {
+    padding: 0;
+}
+
+/*通过自定义字体来定义图标*/
+@font-face {
+  font-family: 'iconfont';
+  /*使用src属性引入字体文件，客户端访问时会下载到客户端本地。
+  * 多个文件是为了兼容跟多的浏览器。
+  *  woff为网页开发的字体，尺寸小，加载快。
+  *  eot为ie私有格式。
+  *  ttf是windows和mac的系统字体，比较大，加载慢，ie9+支持。
+  *  svg是一种图形技术，可以画任意形状图形，但不是图片，可以修改大小颜色，放大后不失帧，ie9+支持。
+  * format参数可选，用于标记字体格式，方便浏览器选择是否加载对应字体。标记字体，浏览器就可以选择不加载不支持的字体了。
+  */
+  src: url('../icon/iconfont.eot');
+  src: url('../icon/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../icon/iconfont.woff2') format('woff2'),
+  url('../icon/iconfont.woff') format('woff'),
+  url('../icon/iconfont.ttf') format('truetype'),
+  url('../icon/iconfont.svg#iconfont') format('svg');
+}
+/*定义iconfont的样式*/
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;/*字体抗锯齿渲染，针对webkit引擎，非标准样式*/
+  -moz-osx-font-smoothing: grayscale;/*字体抗锯齿渲染，针对moz-osx引擎，非标准样式*/
+}
+
+/*悬停小手*/
+.cursorPointer {
+  cursor: pointer;
+}
+.cursorMove {
+  cursor: move;
+}
+.cursorDefault {
+  cursor: default;
+}
+
+
+.fw600{
+  font-weight: 600;
+}
+.fs12 {
+  font-size: 12px;
+}
+.fs14 {
+  font-size: 14px;
+}
+.fs16 {
+  font-size: 16px;
+}
+.fs18 {
+  font-size: 18px;
+}
+.fs20 {
+  font-size: 20px;
+}
+.fs25 {
+  font-size: 25px;
+}
+.fs30 {
+  font-size: 30px;
+}
+.fs40 {
+  font-size: 40px;
+}
+.fs50 {
+  font-size: 50px;
+}
+.fs60 {
+  font-size: 60px;
+}
+
+
+.lh30 {
+  line-height: 30px;
+}
+.lh15 {
+  line-height: 15px;
+}
+
+.bb1px {
+  border-bottom: 1px solid #e0e0e0;
+}
+.borderBottomS1-EAE9E0{
+  border-bottom: solid 1px #EAE9E0;
+}
+.borderBottomS1-000{
+  border-bottom: solid 1px #000;
+}
+.borderRightS1-000{
+  border-right: solid 1px #000;
+}
+.borderLeftS1-000{
+  border-left: solid 1px #000;
+}
+.borderTopS1-000{
+  border-top: solid 1px #000;
+}
+.borderTopS1-cba{
+  border-top: solid 1px #cba;
+}
+.br1px {
+  border-right: 1px solid #e0e0e0;
+}
+.bt1ba {
+  border-top: 1px solid #bababa;
+}
+.b1px {
+  border: 1px solid #e0e0e0;
+}
+.b1F60 {
+  border: 1px solid #f60;
+}
+
+.br5px{
+  border-radius: 5px;
+}
+.br3px{
+  border-radius: 3px;
+}
+.br10px{
+  border-radius: 10px;
+}
+.br20{
+  border-radius: 20px;
+}
+
+/*div内的行级元素水平居中*/
+.tc {
+  text-align: center;
+}
+.tl {
+  text-align: left;
+}
+.tr {
+  text-align: right;
+}
+.vat {
+  vertical-align: top;
+}
+.vac {
+  vertical-align: center;
+}
+.vam {
+  vertical-align: middle;
+}
+
+/*鼠标失去功能*/
+.pen {
+  pointer-events: none;
+}
+
+/*inline-block*/
+.dib{
+  display: inline-block;
+}
+.di{
+  display: inline;
+}
+
+.pr{
+  position: relative;
+}
+.pa{
+  position: absolute;
+}
+.top1{
+  top: 1px;
+}
+.top10{
+  top: 10px;
+}
+
+
+
+/*flex布局相关样式*/
+.flex{
+  display: flex;
+}
+.flexRow{
+  flex-direction: row;
+}
+.flexColumn{
+  flex-direction: column;
+}
+.flexColumnReverse{
+  flex-direction: column-reverse;
+}
+.jcc{
+  justify-content: center;
+}
+.jcfe{
+  justify-content: flex-end;
+}
+.jcsa{
+  justify-content: space-around;
+}
+.jcsb{
+  justify-content: space-between;
+}
+.aic{
+  align-items: center;
+}
+.aife{
+  align-items: flex-end;
+}
+.aib{
+  align-items: baseline;
+}
+
+.flex1{
+  flex: 1;
+}
+.fg1{
+  flex-grow: 1;
+}
+.fg2{
+  flex-grow: 2;
+}
+.fg3{
+  flex-grow: 3;
+}
+.flexShrink2{
+  flex-shrink: 2;
+}
+.flexShrink1{
+  flex-shrink: 1;
+}
+.flexShrink0{
+  flex-shrink: 0;
+}
+.flexCut4{
+  flex: 0 0 25%;
+}
+.flexCut25{
+  flex: 0 0 25%;
+}
+.flexCut5{
+  flex: 0 0 20%;
+}
+.flexCut20{
+  flex: 0 0 20%;
+}
+.flexCut40{
+  flex: 0 0 40%;
+}
+.flexCut47{
+  flex: 0 0 47%;
+}
+.flexCut2{
+  flex: 0 0 50%;
+}
+.flexCut50{
+  flex: 0 0 50%;
+}
+.flexCut80{
+  flex: 0 0 80%;
+}
+.fww{
+  flex-wrap: wrap
+}
+.fwnw{
+  flex-wrap: nowrap
+}
+
+/*不换行*/
+.wsnp {
+  white-space:nowrap
+}
+/*使换行符生效*/
+.wspw {
+  white-space: pre-wrap;
+}
+/*超出范围省略号*/
+.textOfe {
+  text-overflow:ellipsis;
+}
+.ofh {
+  overflow:hidden;
+}
+.textHidden{
+
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:1;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+.textHidden2{
+
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+
+.zi2{
+  z-index:2
+}
+.zi3{
+  z-index:3
+}
+
+.opacity2{
+  opacity:0.2;
+}
+.opacity6{
+  opacity:0.6;
+}
+.opacity7{
+  opacity:0.7;
+}
+.opacity8{
+  opacity:0.8;
+}
+.opacity9{
+  opacity:0.9;
+}
+
